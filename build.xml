@@ -5,13 +5,13 @@
 	</target>
 	<target name="package" depends="compile" description="packaging the files">
 		<mkdir dir="build/jars"/>
-		<jar destfile="build/jars/HelloWorld.jar" basedir="build/classes">
+		<jar destfile="build/jars/EnhancedFor.jar" basedir="build/classes">
 			<manifest>
-		  <attribute name ="Main-Class" value ="HelloWorld"/>
+		  <attribute name ="Main-Class" value ="EnhancedFor"/>
 			</manifest>
 		</jar>
 	</target>
 	<target name="run" depends="package" description="run the package">
-	  <java jar="build/jar/HelloWorld.jar" fork="true"/>
+	  <java jar="build/jar/EnhancedFor.jar" fork="true"/>
 	</target>
 </project>
